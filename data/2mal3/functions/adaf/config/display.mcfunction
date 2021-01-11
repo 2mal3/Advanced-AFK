@@ -22,7 +22,7 @@ tellraw @s {"text":""}
 # Auto afk
 execute if score $adaf.auto_afk adaf.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:adaf/config/buttons/auto_afk/enable"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Auto afk","color":"gold","hoverEvent":{"action":"show_text","contents":"Players are automatically marked as afk after a certain time."}}]
 execute if score $adaf.auto_afk adaf.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:adaf/config/buttons/auto_afk/disable"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Auto afk","color":"gold","hoverEvent":{"action":"show_text","contents":"Players are automatically marked as afk after a certain time."}}]
-tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set $adaf.time adaf.config <time in seconds>"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Auto afk time: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Time after the player is marked as afk."}},{"score":{"name":"$adaf.time","objective":"adaf.config"},"color":"red"}]
+tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set $adaf.time adaf.config <time in minutes>"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Auto afk time: ","color":"gold","hoverEvent":{"action":"show_text","contents":"Time after the player is marked as afk."}},{"score":{"name":"$adaf.time","objective":"adaf.config"},"color":"red"}]
 
 tellraw @s {"text":""}
 

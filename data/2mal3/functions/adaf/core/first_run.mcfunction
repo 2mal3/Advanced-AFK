@@ -8,7 +8,7 @@ tellraw @s {"text":"Advanced AFK Datapack v1.0.0 by 2mal3 was installed!","color
 
 # Sets the start config
 scoreboard players set $adaf.auto_afk adaf.config 1
-scoreboard players set $adaf.time adaf.config 300
+scoreboard players set $adaf.time adaf.config 5
 scoreboard players set $adaf.name adaf.config 1
 scoreboard players set $adaf.message adaf.config 0
 scoreboard players set $adaf.trigger adaf.config 1
