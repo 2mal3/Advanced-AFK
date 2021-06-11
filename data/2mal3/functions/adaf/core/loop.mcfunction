@@ -1,4 +1,5 @@
-# Description: Tick commands every second
+# Description: Tick commands every minute
+# AS: server, AT: server
 # Called from: 2mal3:adaf/core/reload, 2mal3:adaf/core/tick/second
 # Datapack by 2mal3
 

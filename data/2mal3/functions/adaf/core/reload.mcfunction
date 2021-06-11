@@ -1,31 +1,20 @@
-# Description: Init datapack
-# Called from: #reaload
+# Description: Commands when reloading the datapack
+# AS: server, AT: server
+# Called from tag: minecraft:reaload
 # Datapack by 2mal3
 
-# add scoreboards
+# Output debug message in chat, if enabled (INFO)
+tellraw @a[scores={adaf.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"<name>","color":"green"},{"text":"/","color":"gray"},{"text":"INFO","color":"green"},{"text": "/","color": "gray"},{"text": "Server","color": "green"},{"text":"]: ","color":"gray"},{"text":"Datapack reloaded","color":"green"}]
+
+
+# Add basic scoreboards
 scoreboard objectives add adaf.data dummy
-scoreboard objectives add adaf.config dummy
-scoreboard objectives add adaf.afk_time dummy
-scoreboard objectives add afk trigger {"text":"AFK Toggled"}
-
-scoreboard objectives add adaf.pos_x dummy
-scoreboard objectives add adaf.pos_y dummy
-scoreboard objectives add adaf.pos_z dummy
-
-# set version
-scoreboard players set $version adaf.data 010000
-
-
-# add teams
-team add adaf.afk
-
-
-
-# send reload massage after 4 sekonds
-execute unless score $first_run adaf.data matches 1 run schedule function 2mal3:adaf/core/first_run 4s
+# Initializes the datapack at the first startup or new version
+execute unless score .first_run adaf.data matches 1 run function 2mal3:adaf/core/first_run/main
+execute if score .first_run adaf.data matches 1 unless score $version adaf.data matches 010000 run function 2mal3:adaf/core/first_run/update
 
 # Saves that the datapack was started
 scoreboard players set adaf load.status 1
 
-# start other ticks
-function 2mal3:adaf/core/loop
+# Starts the loops
+schedule function 2mal3:adaf/core/loop 60s
