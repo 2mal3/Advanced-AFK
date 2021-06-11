@@ -4,7 +4,7 @@
 # Datapack by 2mal3
 
 # Output debug message in chat, if enabled (INFO)
-tellraw @a[scores={adaf.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"<name>","color":"green"},{"text":"/","color":"gray"},{"text":"INFO","color":"green"},{"text": "/","color": "gray"},{"text": "Server","color": "green"},{"text":"]: ","color":"gray"},{"text":"Datapack reloaded","color":"green"}]
+tellraw @a[scores={adaf.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"AdvancedAFK","color":"green"},{"text":"/","color":"gray"},{"text":"INFO","color":"green"},{"text": "/","color": "gray"},{"text": "Server","color": "green"},{"text":"]: ","color":"gray"},{"text":"Datapack reloaded","color":"green"}]
 
 
 # Add basic scoreboards
@@ -17,4 +17,4 @@ execute if score .first_run adaf.data matches 1 unless score $version adaf.data 
 scoreboard players set adaf load.status 1
 
 # Starts the loops
-schedule function 2mal3:adaf/core/loop 60s
+schedule function 2mal3:adaf/core/loop 60s replace

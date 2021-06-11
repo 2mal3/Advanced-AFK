@@ -19,4 +19,4 @@ execute if score $trigger adaf.config matches 1 run scoreboard players enable @a
 
 
 # Call the function next second
-schedule function 2mal3:adaf/core/loop 60s
+schedule function 2mal3:adaf/core/loop 60s replace
