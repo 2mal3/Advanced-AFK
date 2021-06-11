@@ -14,7 +14,7 @@ execute if score $auto_afk adaf.config matches 1 as @a[tag=!adaf.afk,tag=!global
 # A player is no longer afk
 execute as @a[tag=adaf.afk,tag=adaf.is_moving] run function 2mal3:adaf/remove_afk/main
 # AFK trigger
-execute as @a[scores={afk=1..}] run function 2mal3:adaf/trigger_afk/test
+execute if score $trigger adaf.config matches 1 as @a[scores={afk=1..}] run function 2mal3:adaf/toggle_afk
 execute if score $trigger adaf.config matches 1 run scoreboard players enable @a afk
 
 
