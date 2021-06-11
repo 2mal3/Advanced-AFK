@@ -3,6 +3,9 @@
 # Called from: 2mal3:adaf/core/tick/second
 # Datapack by 2mal3
 
+# Output debug message in chat, if enabled (DEBUG)
+tellraw @a[scores={adaf.debug_mode=4..}] [{"text":"[","color":"gray"},{"text":"AdvancedAFK","color":"aqua"},{"text":"/","color":"gray"},{"text":"DEBUG","color":"aqua"},{"text": "/","color": "gray"},{"selector": "@s","color": "aqua"},{"text":"]: ","color":"gray"},{"text":"Player is not longer AFK","color":"aqua"}]
+
 # Leaves the AFK Team
 team leave @s[team=adaf.afk]
 # Sends an message if it is activated

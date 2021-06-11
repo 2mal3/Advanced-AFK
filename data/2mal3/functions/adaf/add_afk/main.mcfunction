@@ -3,6 +3,9 @@
 # Called from: 2mal3:adaf/core/tick/second
 # Datapack by 2mal3
 
+# Output debug message in chat, if enabled (DEBUG)
+tellraw @a[scores={adaf.debug_mode=4..}] [{"text":"[","color":"gray"},{"text":"AdvancedAFK","color":"aqua"},{"text":"/","color":"gray"},{"text":"DEBUG","color":"aqua"},{"text": "/","color": "gray"},{"selector": "@s","color": "aqua"},{"text":"]: ","color":"gray"},{"text":"Player is now AFK","color":"aqua"}]
+
 # Sends an message if it is activated
 execute if score $message adaf.config matches 1 run tellraw @a [{"selector":"@s","color":"gray"},{"text":" is now AFK.","color":"gray"}]
 # Joins the AFK Team when it is activated
