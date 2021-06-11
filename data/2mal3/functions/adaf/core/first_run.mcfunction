@@ -7,12 +7,12 @@ tellraw @s {"text":"Advanced AFK Datapack v1.0.0 by 2mal3 was installed!","color
 
 
 # Sets the start config
-scoreboard players set $adaf.auto_afk adaf.config 1
-scoreboard players set $adaf.time adaf.config 5
-scoreboard players set $adaf.name adaf.config 1
-scoreboard players set $adaf.message adaf.config 0
-scoreboard players set $adaf.trigger adaf.config 1
-scoreboard players set $adaf.got_mode adaf.config 0
+scoreboard players set $auto_afk adaf.config 1
+scoreboard players set $time adaf.config 5
+scoreboard players set $name adaf.config 1
+scoreboard players set $message adaf.config 0
+scoreboard players set $trigger adaf.config 1
+scoreboard players set $got_mode adaf.config 0
 
 team modify adaf.afk suffix {"text":" [AFK]","color":"gray"}
 team modify adaf.afk color gray
@@ -20,4 +20,4 @@ team modify adaf.afk color gray
 
 
 # Remembers that the datapack has been installed
-scoreboard players set $adaf.first_run adaf.data 1
+scoreboard players set $first_run adaf.data 1

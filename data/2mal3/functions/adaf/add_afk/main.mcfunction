@@ -3,13 +3,13 @@
 # Datapack by 2mal3
 
 # Sends an message if it is activated
-execute if score $adaf.message adaf.config matches 1 run tellraw @a [{"selector":"@s","color":"gray"},{"text":" is now AFK.","color":"gray"}]
+execute if score $message adaf.config matches 1 run tellraw @a [{"selector":"@s","color":"gray"},{"text":" is now AFK.","color":"gray"}]
 
 # Joins the AFK Team when it is activated
-execute if score $adaf.name adaf.config matches 1 run team join adaf.afk @s
+execute if score $name adaf.config matches 1 run team join adaf.afk @s
 
 # Activates the got mode, if it is enabled
-execute if score $adaf.got_mode adaf.config matches 1 run function 2mal3:adaf/add_afk/got_mode
+execute if score $got_mode adaf.config matches 1 run function 2mal3:adaf/add_afk/got_mode
 
 
 # Tags

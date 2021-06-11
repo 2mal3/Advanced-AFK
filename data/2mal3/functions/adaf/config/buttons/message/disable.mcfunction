@@ -3,7 +3,7 @@
 # Datapack by 2mal3
 
 # Disables auto afk
-scoreboard players set $adaf.message adaf.config 0
+scoreboard players set $message adaf.config 0
 
 # Display config
 function 2mal3:adaf/config/display
