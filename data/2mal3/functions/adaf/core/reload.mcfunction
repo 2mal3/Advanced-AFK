@@ -28,4 +28,4 @@ execute unless score $first_run adaf.data matches 1 run schedule function 2mal3:
 scoreboard players set adaf load.status 1
 
 # start other ticks
-function 2mal3:adaf/core/tick/second
+function 2mal3:adaf/core/loop

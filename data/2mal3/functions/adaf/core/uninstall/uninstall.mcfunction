@@ -22,7 +22,7 @@ team remove adaf.afk
 
 
 # stop ticks
-schedule clear 2mal3:adaf/core/tick/minute
+schedule clear 2mal3:adaf/core/loop
 
 
 
