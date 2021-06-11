@@ -24,5 +24,8 @@ team add adaf.afk
 # send reload massage after 4 sekonds
 execute unless score $first_run adaf.data matches 1 run schedule function 2mal3:adaf/core/first_run 4s
 
+# Saves that the datapack was started
+scoreboard players set adaf load.status 1
+
 # start other ticks
 function 2mal3:adaf/core/tick/second
