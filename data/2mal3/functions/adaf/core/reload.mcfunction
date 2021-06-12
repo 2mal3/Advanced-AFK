@@ -11,7 +11,7 @@ tellraw @a[scores={adaf.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"A
 scoreboard objectives add adaf.data dummy
 # Initializes the datapack at the first startup or new version
 execute unless score .first_run adaf.data matches 1 run function 2mal3:adaf/core/first_run/main
-execute if score .first_run adaf.data matches 1 unless score $version adaf.data matches 010000 run function 2mal3:adaf/core/first_run/update
+execute if score .first_run adaf.data matches 1 unless score $version adaf.data matches 010100 run function 2mal3:adaf/core/first_run/update
 
 # Saves that the datapack was started
 scoreboard players set adaf load.status 1
