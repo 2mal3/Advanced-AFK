@@ -11,9 +11,9 @@ scoreboard players operation .temp_1 adaf.data = @s adaf.pos_y
 scoreboard players operation .temp_2 adaf.data = @s adaf.pos_z
 
 # Saves new position
-execute store result score @s adaf.pos_x run data get entity @s Pos[0]
-execute store result score @s adaf.pos_y run data get entity @s Pos[1]
-execute store result score @s adaf.pos_z run data get entity @s Pos[2]
+execute store result score @s adaf.pos_x run data get entity @s Pos[0] 0.2
+execute store result score @s adaf.pos_y run data get entity @s Pos[1] 0.2
+execute store result score @s adaf.pos_z run data get entity @s Pos[2] 0.2
 
 # Tests if the positions are different
 execute unless score @s adaf.pos_x = .temp_0 adaf.data run tag @s add adaf.is_moving
