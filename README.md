@@ -1,5 +1,4 @@
 # Advanced-AFK-Datapack
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/2mal3/Advanced-AFK-Datapack?style=flat-square) ![GitHub all releases](https://img.shields.io/github/downloads/2mal3/Advanced-AFK-Datapack/total?style=flat-square) ![GitHub](https://img.shields.io/github/license/2mal3/Advanced-AFK-Datapack?style=flat-square)
 
 This lightweight datapack adds a highly configurable AFK mode with many features for players on servers.
 The afk mode offers many features that can all be easily configured via an in game gui.

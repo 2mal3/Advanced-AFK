@@ -19,7 +19,7 @@ scoreboard objectives add adaf.pos_z dummy
 team add adaf.afk
 
 # Set the version in format: xx.xx.xx
-scoreboard players set $version adaf.data 010100
+scoreboard players set $version adaf.data 010000
 # Sets the start config
 scoreboard players set $auto_afk adaf.config 1
 scoreboard players set $time adaf.config 5

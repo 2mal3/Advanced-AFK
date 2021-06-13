@@ -23,8 +23,8 @@ scoreboard objectives remove adaf.pos_z
 team remove adaf.afk
 
 # Sends an uninstallation message to all players
-tellraw @a [{"text":"Advanced AFK Datapack v1.1.0 by 2mal3 was successfully uninstalled."}]
+tellraw @a [{"text":"Advanced AFK Datapack v1.0.0 by 2mal3 was successfully uninstalled."}]
 
 # Disables the datapack
-datapack disable "file/Advanced-AFK-Datapack-v1.1.0"
-datapack disable "file/Advanced-AFK-Datapack-v1.1.0.zip"
+datapack disable "file/Advanced-AFK-Datapack-v1.0.0"
+datapack disable "file/Advanced-AFK-Datapack-v1.0.0.zip"
