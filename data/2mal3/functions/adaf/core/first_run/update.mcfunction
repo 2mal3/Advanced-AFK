@@ -6,5 +6,7 @@
 # Output debug message in chat, if enabled (INFO)
 tellraw @a[scores={adaf.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"AdvancedAFK","color":"green"},{"text":"/","color":"gray"},{"text":"INFO","color":"green"},{"text": "/","color": "gray"},{"text": "Server","color": "green"},{"text":"]: ","color":"gray"},{"text":"Updated datapack","color":"green"}]
 
+function 2mal3:adaf/core/first_run/main
+
 # Set version variable in format xx.xx.xx
-scoreboard players set $version nola.data 010000
+scoreboard players set $version nola.data 010100
