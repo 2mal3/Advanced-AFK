@@ -17,4 +17,5 @@ execute if score .first_run adaf.data matches 1 unless score $version adaf.data 
 scoreboard players set adaf load.status 1
 
 # Starts the loops
-schedule function 2mal3:adaf/core/loop 60s replace
+schedule function 2mal3:adaf/core/loops/second 1s replace
+schedule function 2mal3:adaf/core/loops/minute 60s replace

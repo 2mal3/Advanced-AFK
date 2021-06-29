@@ -8,7 +8,8 @@ tellraw @a[scores={adaf.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"A
 
 
 # Stops the loop
-schedule clear 2mal3:adaf/core/loop
+schedule clear 2mal3:adaf/core/loops/second
+schedule clear 2mal3:adaf/core/loops/minute
 
 # Deletes the scoreboards
 scoreboard objectives remove adaf.data
