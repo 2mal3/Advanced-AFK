@@ -1,13 +1,25 @@
 
-Update v1.1.0 (13.6.2021)
+## Update v2.0.0 (22.12.2021)
+
+### Changed:
+- Support for the 1.18!
+- More optimized
+- [Internal] Complete rewrite with [mc-build](https://github.com/mc-build/mc-build)
+
+### Removed:
+- [Internal] Lantern Load library
+
+----------------------------------------------------------------
+
+## Update v1.1.0 (13.6.2021)
 
 This update does not bring any new features, but improves the overall experience. The datapack is now fully compatible with the new Minecraft version and behind the scenes the code has been significantly improved and cleaned up.
 
-Added:
+### Added:
 - Datapack icon
 - Debug messages
 
-Changed:
+### Changed:
 - Updated to the 1.17
 - Bypassing automatic AFK detection made more difficult
 - Updated datapack core
