@@ -23,7 +23,7 @@ clock 1s {
       execute unless score .temp1 adaf.data = @s adaf.pos.y run tag @s add adaf.moving
       execute unless score .temp2 adaf.data = @s adaf.pos.z run tag @s add adaf.moving
 
-      # Cound afk time
+      # Count afk time
       execute if entity @s[tag=adaf.moving] run scoreboard players set @s adaf.afkTime 0
       execute if entity @s[tag=!adaf.moving] run scoreboard players add @s adaf.afkTime 1
 

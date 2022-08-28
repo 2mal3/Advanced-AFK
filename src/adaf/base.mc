@@ -40,7 +40,7 @@ function load {
 }
 
 function first_join {
-  ## Warns the player if he uses a not supportet server software or minecraft version
+  ## Warns the player if he uses a not supported server software or minecraft version
   # Get data
   # Prepare variables
   scoreboard players set .temp0 adaf.data 0
