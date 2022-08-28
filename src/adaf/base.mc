@@ -36,7 +36,7 @@ function load {
   execute if score %installed adaf.data matches 1 unless score $version adaf.data matches 020000 run {
     log AdvancedAFK info server <Updated datapack>
     # Save new version
-    scoreboard players set $version adaf.data 010000
+    scoreboard players set $version adaf.data 020000
   }
 }
 
