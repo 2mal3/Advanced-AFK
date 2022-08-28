@@ -9,8 +9,8 @@ advancement root {
     "background": "minecraft:textures/block/gray_concrete.png",
     "show_toast": false,
     "announce_to_chat": false
-},
-"criteria": {
+  },
+  "criteria": {
     "trigger": {
       "trigger": "minecraft:tick"
     }
@@ -23,7 +23,7 @@ advancement 2mal3 {
     "description": "",
     "icon": {
       "item": "minecraft:player_head",
-      "nbt": "{SkullOwner: '2mal3'}"
+      "nbt": "{SkullOwner: \"2mal3\"}"
     },
     "show_toast": false,
     "announce_to_chat": false
@@ -35,5 +35,3 @@ advancement 2mal3 {
     }
   }
 }
-
-
