@@ -41,21 +41,9 @@ function load {
 }
 
 function first_join {
-  ## Warns the player if he uses a not supported server software or minecraft version
-  # Get data
-  # Prepare variables
-  scoreboard players set .temp0 adaf.data 0
-  scoreboard players set .temp1 adaf.data 0
-  # Finds out the version the player plays on
-  execute store result score .temp0 adaf.data run data get entity @s DataVersion
-  # Checks for specific Server software like Bukkit, Spigot or Paper
-  execute store success score .temp1 adaf.data run data get entity @r "Bukkit.updateLevel"
-  execute store success score .temp1 adaf.data run data get entity @r "Spigot.ticksLived"
-  execute store success score .temp1 adaf.data run data get entity @r "Paper.SpawnReason"
-
-  # Gives an error message for if something is wrong
-  execute unless score .temp0 adaf.data matches 756.. run tellraw @s [{"text":"[","color":"gray"},{"text":"AdvancedAFK","color":"gold"},{"text":"/","color":"gray"},{"text":"WARN","color":"gold"},{"text": "/","color": "gray"},{"text": "Server","color": "gold"},{"text":"]: ","color":"gray"},{"text":"This Minecraft version is not supported by the datapack. Please use an Minecraft version later than 1.17.","color":"gold"}]
-  execute if score .temp1 adaf.data matches 1.. run tellraw @s [{"text":"[","color":"gray"},{"text":"AdvancedAFK","color":"gold"},{"text":"/","color":"gray"},{"text":"WARN","color":"gold"},{"text": "/","color": "gray"},{"text": "Server","color": "gold"},{"text":"]: ","color":"gray"},{"text":"This server software is not supported by the datapack, so errors may occur. Please use another server software for better stability.","color":"gold"}]
+  # Warns the player if he uses a not supported server software or minecraft version
+  execute store result score .temp0 nola.data run data get entity @s DataVersion
+  execute unless score .temp0 nola.data matches 3120 run tellraw @s [{"text":"[","color":"gray"},{"text":"NoLag","color":"gold"},{"text":"/","color":"gray"},{"text":"WARN","color":"gold"},{"text": "/","color": "gray"},{"text": "Server","color": "gold"},{"text":"]: ","color":"gray"},{"text":"This Minecraft version is not supported by the datapack. Please use the 1.19.2 to prevent errors.","color":"gold"}]
 }
 
 advancement first_join {
