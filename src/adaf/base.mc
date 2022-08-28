@@ -30,7 +30,7 @@ function load {
     data merge storage adaf:data {gamerules: {autoAFK: 1b, time: 5, message: 1b, name: 1b, invulnerable: 0b, trigger: 0b}, pos: []}
 
     schedule 4s replace {
-      tellraw @a [{"text":"Advanced AFK Datapack v2.0.0 by 2mal3 was installed!","color":"blue"}]
+      tellraw @a {"text":"Advanced AFK Datapack v2.0.0 by 2mal3 was installed!","color":"green"}
     }
   }
   execute if score %installed adaf.data matches 1 unless score $version adaf.data matches 020000 run {
@@ -100,7 +100,7 @@ function uninstall {
   data remove storage adaf:data gamerules
 
   # Sends an uninstallation message to all players
-  tellraw @a {"text":"Advanced AFK Datapack v2.0.0 by 2mal3 was successfully uninstalled."}
+  tellraw @a {"text":"Advanced AFK Datapack v2.0.0 by 2mal3 was successfully uninstalled.","color": "green"}
 
   # Disables the datapack
   datapack disable "file/Advanced-AFK-Datapack"
