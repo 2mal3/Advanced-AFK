@@ -103,6 +103,6 @@ function uninstall {
   tellraw @a {"text":"Advanced AFK Datapack v2.0.0 by 2mal3 was successfully uninstalled."}
 
   # Disables the datapack
-  datapack disable "file/Advanced-AFK-Datapack-v2.0.0"
-  datapack disable "file/Advanced-AFK-Datapack-v2.0.0.zip"
+  datapack disable "file/Advanced-AFK-Datapack"
+  datapack disable "file/Advanced-AFK-Datapack.zip"
 }
