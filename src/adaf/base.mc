@@ -26,6 +26,7 @@ function load {
     team modify adaf.afk color gray
     team modify adaf.afk suffix {"text":" [AFK]","color": "gray"}
     # Set config
+    #declare storage adaf:data
     data merge storage adaf:data {gamerules: {autoAFK: 1b, time: 5, message: 1b, name: 1b, invulnerable: 0b, trigger: 0b}, pos: []}
 
     schedule 4s replace {
@@ -99,7 +100,7 @@ function uninstall {
   data remove storage adaf:data gamerules
 
   # Sends an uninstallation message to all players
-  tellraw @a [{"text":"Advanced AFK Datapack v2.0.0 by 2mal3 was successfully uninstalled."}]
+  tellraw @a {"text":"Advanced AFK Datapack v2.0.0 by 2mal3 was successfully uninstalled."}
 
   # Disables the datapack
   datapack disable "file/Advanced-AFK-Datapack-v2.0.0"

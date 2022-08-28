@@ -43,7 +43,7 @@ function display {
   tellraw @s {"text":""}
 
   # Afk name
-  summon area_effect_cloud ~ ~ ~ {Tags: ["adaf.example"], CustomName: '{"text":"Steve"}'}
+  summon minecraft:area_effect_cloud ~ ~ ~ {Tags: ["adaf.example"], CustomName: '{"text":"Steve"}'}
   team join adaf.afk @e[type=minecraft:area_effect_cloud,tag=adaf.example]
   execute if data storage adaf:data gamerules{name: 0b} run {
     tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function adaf:menu/buttons/name/enable"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Afk name","color":"gold","hoverEvent":{"action":"show_text","contents":"Players who are afk get a different name (incompatible with teams)."}}]
@@ -55,7 +55,6 @@ function display {
   tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_command","value":"/team modify adaf.afk prefix "},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Name prefix","color":"gold","hoverEvent":{"action":"show_text","contents":"The prefix of the name. Must be in json."}}]
   tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_command","value":"/team modify adaf.afk suffix "},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Name suffix","color":"gold","hoverEvent":{"action":"show_text","contents":"The suffix of the name. Must be in json."}}]
   tellraw @s [{"text":"Example: ","color":"gold"},{"selector":"@e[type=minecraft:area_effect_cloud,tag=adaf.example]"}]
-  kill @e[type=minecraft:area_effect_cloud,tag=adaf.example]
   tellraw @s {"text":""}
 
   # Invulnerable
