@@ -20,7 +20,7 @@ function load {
     scoreboard objectives add adaf.pos.y dummy
     scoreboard objectives add adaf.pos.z dummy
     # Set the version in format: xx.xx.xx
-    scoreboard players set $version adaf.data 020000
+    scoreboard players set $version adaf.data 020100
     # Teams
     team add adaf.afk
     team modify adaf.afk color gray
@@ -30,13 +30,14 @@ function load {
     data merge storage adaf:data {gamerules: {autoAFK: 1b, time: 5, message: 1b, name: 1b, invulnerable: 0b, trigger: 0b}, pos: []}
 
     schedule 4s replace {
-      tellraw @a {"text":"Advanced AFK Datapack v2.0.0 by 2mal3 was installed!","color":"green"}
+      tellraw @a {"text":"Advanced AFK Datapack v2.1.0 by 2mal3 was installed!","color":"green"}
     }
   }
   execute if score %installed adaf.data matches 1 unless score $version adaf.data matches 020000 run {
-    log AdvancedAFK info server <Updated datapack>
-    # Save new version
-    scoreboard players set $version adaf.data 020000
+    execute if score $version adaf.data matches 020000 run {
+      log AdvancedAFK info server <Updated datapack from v2.0.0 to v2.1.0>
+      scoreboard players set $version adaf.data 020100
+    }
   }
 }
 
@@ -59,7 +60,7 @@ advancement first_join {
 
 advancement adaf {
   "display": {
-    "title": "Advanced AFK v2.0.0",
+    "title": "Advanced AFK v2.1.0",
     "description": "A highly configurable AFK datapack with many features.",
     "icon": {
       "item": "minecraft:fishing_rod"
@@ -88,7 +89,7 @@ function uninstall {
   data remove storage adaf:data gamerules
 
   # Sends an uninstallation message to all players
-  tellraw @a {"text":"Advanced AFK Datapack v2.0.0 by 2mal3 was successfully uninstalled.","color": "green"}
+  tellraw @a {"text":"Advanced AFK Datapack v2.1.0 by 2mal3 was successfully uninstalled.","color": "green"}
 
   # Disables the datapack
   datapack disable "file/Advanced-AFK-Datapack"
