@@ -28,7 +28,7 @@ clock 1s {
       execute if entity @s[tag=!adaf.moving] run scoreboard players add @s adaf.afkTime 1
 
       # Switch afk mode
-      execute store result score .temp0 adaf.data run data get storage adaf:data gamerules.time 10
+      execute store result score .temp0 adaf.data run data get storage adaf:data gamerules.time 60
       execute if entity @s[tag=!adaf.afk] if score @s adaf.afkTime >= .temp0 adaf.data run function adaf:core/enter
       execute if entity @s[tag=adaf.afk,tag=adaf.moving] run function adaf:core/leave
     }
