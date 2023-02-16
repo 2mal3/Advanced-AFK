@@ -18,7 +18,7 @@ function install {
 
     scoreboard objectives add 2mal3.debug_mode dummy
     scoreboard objectives add afk trigger
-    scoreboard objectives add adaf.afkTime dummy
+    scoreboard objectives add adaf.afk_time dummy
     scoreboard objectives add adaf.pos.x dummy
     scoreboard objectives add adaf.pos.y dummy
     scoreboard objectives add adaf.pos.z dummy
@@ -86,7 +86,7 @@ function uninstall {
 
     scoreboard objectives remove adaf.data
     scoreboard objectives remove afk
-    scoreboard objectives remove adaf.afkTime
+    scoreboard objectives remove adaf.afk_time
     scoreboard objectives remove adaf.pos.x
     scoreboard objectives remove adaf.pos.y
     scoreboard objectives remove adaf.pos.z
