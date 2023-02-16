@@ -24,3 +24,5 @@ Command to change the afk mode (if enabled): `/trigger afk`
 - Should work with the most datapacks. However, it can break datapacks that use player teams.
 - Not tested with Forge, Bukkit, Spigot and PaperSpigot but probably don't work
 - The datapack was created with [mc-build](https://github.com/mc-build/mc-build)
+
+_3.0.1_
