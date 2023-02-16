@@ -1,4 +1,4 @@
-# Advanced-AFK-Datapack
+# Advanced-AFK
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/2mal3/Advanced-AFK-Datapack?style=flat-square) ![GitHub all releases](https://img.shields.io/github/downloads/2mal3/Advanced-AFK-Datapack/total?style=flat-square) ![Minecraft](https://img.shields.io/badge/Minecraft-1.19-orange?style=flat-square)
 
 This lightweight datapack adds a highly configurable, feature rich AFK mode for players on servers. All settings can be easily configured using the in-game gui , which can be accessed with the `/function #adaf:menu` command.
