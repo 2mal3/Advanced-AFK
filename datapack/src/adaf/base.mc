@@ -38,9 +38,16 @@ function install {
 }
 
 function update {
+    # v2.1.0
     execute if score $version adaf.data matches 020000 run {
         log AdvancedAFK info server <Updated datapack from v2.0.0 to v2.1.0>
         scoreboard players set $version adaf.data 020100
+    }
+
+    # v2.2.0
+    execute if score $version adaf.data matches 20100 run {
+        log AdvancedAFK info server <Updated datapack from v2.1.0 to v2.2.0>
+        scoreboard players set $version adaf.data 2200
     }
 }
 

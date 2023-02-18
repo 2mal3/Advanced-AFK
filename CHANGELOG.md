@@ -1,15 +1,10 @@
-### Changed:
+### Changed
 
-- compatibility with 1.19
-- better in-game menu
-- easier opening of menu
-- updated wrong environment warning
-- status message color
-- new version format
-- license to LGPL-3.0
+- smaller pack size
+- removed "datapack" from the name
 
-### Fixed:
+### Fixed
 
-- broken player head in datapack advancement
-- typos
-- wrong internal version at update
+- AFK time unit is not minutes [#3](https://github.com/2mal3/Advanced-AFK/issues/3) (thanks to [@Glaived](https://github.com/Glaived))
+- wrong version warning has wrong datapack name
+- wrong version warning requires exact Minecraft version
