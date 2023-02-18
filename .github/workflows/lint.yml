@@ -5,6 +5,8 @@ on:
       paths:
         - '**.mc'
         - 'config.json'
+      tags-ignore:
+        - 'v*.*.*'
   pull_request:
   workflow_dispatch:
 
